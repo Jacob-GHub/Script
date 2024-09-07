@@ -1,0 +1,52 @@
+.clubImg{
+    height:200px;
+    width:200px;
+}
+/* .clubCard,.clubTitle,.clubDescription, .clubTextContainer{
+    background-color:#FF6137 ;
+} */
+.clubInfo{
+    width:200px;
+    height:250px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    text-align: center;
+}
+.clubTextContainer{
+    /* flex:1; */
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:20px;
+}
+.clubTitle{
+    font-size: 25px;
+    font-weight: bold;
+}
+.viewBtn{
+    background-color: #1e1e1e;
+    border:none;
+    cursor:pointer;
+    color:white;
+    width:100px;
+    height:30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:1000px){
+    .clubCard{
+        display:flex;
+    }
+    .clubInfo{
+        height:200px;
+        width:300px;
+    }
+    .clubTitle{
+        font-size: 20px;
+    }
+}

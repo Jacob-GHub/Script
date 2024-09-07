@@ -1,0 +1,43 @@
+.navBar{
+    font-weight: bold;
+    font-size: 20px;
+    display:flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    align-items: center;
+    color:#1E1E1E;
+    background-color:#F1F0EA ;
+}
+
+.navBar-left{
+    display:flex;
+    gap:20px;
+}
+.navBar-right{
+    display:flex;
+    gap:15px;
+}
+.navBar button{
+    cursor:pointer;
+    padding:10px 30px;
+    color:white;
+    border:none;
+    font-size: 20px;
+}
+.login{
+    background-color:#707070 ;
+}
+.signin{
+    background-color: #1E1E1E;
+}
+@media (max-width:800px) {
+    .guide,.aboutUs{
+        display:none;
+    }
+    .navBar button{
+        width:90px;
+        height:50px;
+        font-size: 20px;
+        padding:0px;
+    }
+}

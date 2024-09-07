@@ -1,0 +1,85 @@
+.body{
+    background-color: #F1F0EA;
+}
+.trendingReviews{
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+    align-items: center;
+}
+.reviewCards{
+    display: flex;
+    gap:50px;
+}
+.featuredClubs{
+    margin-top: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    height:max-content;
+
+}
+.clubCards{
+    padding:20px;
+    background-color: #1e1e1e;
+    height:500px;
+    display:flex;
+    justify-content: center;
+    gap:100px;
+    width:100vw;
+}
+.viewMoreClubs{
+    padding:10px 20px;
+    font-size: 20px;
+    border:none;
+    background-color: #1e1e1e;
+    color:white;
+    cursor: pointer;
+}
+.findABook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap:50px;
+}
+.bookContainer{
+    display:flex;
+    justify-content: center;
+    gap:50px;
+}
+.viewAllBooks{
+    margin-top: 10px;
+    padding:10px 20px;
+    font-size: 20px;
+    border:none;
+    background-color: #1e1e1e;
+    color:white;
+    cursor: pointer;
+}
+
+@media (max-width:1350px) {
+    .reviewCards{
+        gap:30px;
+    }
+}
+@media (max-width:1200px) {
+    .reviewCards{
+        flex-direction: column;
+        gap:50px;
+    }
+}
+
+@media(max-width:1000px){
+    .bookContainer{
+        flex-wrap:wrap;
+    }
+    .clubCards{
+        flex-direction: column;
+        height:fit-content;
+        align-items: center;
+        gap:25px;
+    }
+}

@@ -1,0 +1,22 @@
+.header{
+    display:flex;
+    flex-direction: column;
+    padding:20px 100px;
+    align-items: center;
+    gap:70px;
+    padding-top: 30px;
+    background-color: #F1F0EA;
+}
+.headerText{
+    text-align: center;
+    width: 500px;
+}
+.getStarted{
+
+    padding:10px 20px;
+    font-size: 20px;
+    border:none;
+    background-color: #1e1e1e;
+    color:white;
+    cursor: pointer;
+}

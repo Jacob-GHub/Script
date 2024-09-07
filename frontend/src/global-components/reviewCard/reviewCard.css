@@ -1,0 +1,162 @@
+.container{
+    display:flex;
+    background-color:#1e1e1e;
+    height:300px;
+    width:440px;
+    z-index: 2;
+    position: relative;
+}
+.username{
+    width:150px;
+    
+}
+.review{
+    padding-right:40px;
+}
+.textContainer{
+    display:flex;
+    flex-direction: column;
+    padding-top:30px;
+    gap:20px;
+    color:white;
+
+}
+.user, .username, .review, .img, .bookCover, .textContainer, .profilePic{
+    background-color:inherit;
+}
+
+.user{
+    display:flex;
+    gap:10px;
+    font-size: 20px;
+
+}
+.username{
+    align-self: center;
+    color:white;
+    font-weight: bold;
+}
+img{
+    width:auto;
+    height:auto;
+}
+.bookCover{
+    max-width: 180px;
+    max-height: 270px;
+    padding:30px;
+    align-self: center;
+}
+.profilePic{
+    max-width:30px;
+    max-height:30px;
+}
+.colorbox{
+    position:absolute;
+    width:435px;
+    height:300px;
+    z-index: 1;
+    transform: translate(3.5%,3.5%);
+
+
+}
+/* @media (max-width:1350px) {
+    .container{
+        width:350px;
+        height:400px;
+        flex-direction: column;
+    }
+    .bookCover,.user{
+        align-self: center;
+    }
+    .bookCover{
+        padding-bottom:0px;
+    }
+    .review{
+        align-self: center;
+        padding:0px 30px;
+        padding-bottom:30px;
+    }
+    .colorbox{
+        width:350px;
+        height:435px;
+        transform: translate(3.5%,5.5%);
+    }
+
+} */
+
+@media (max-width:1350px) {
+    .container{
+        width:380px;
+        height:250px;
+        flex-direction: row;
+        font-size:15px;
+    }
+    .textContainer{
+        padding:30px 0px;
+    }
+    .username{
+        font-size: 15px;
+    }
+    .bookCover{
+        max-width: 200px;
+        max-height: 400px;
+        padding:30px;
+        align-self: normal;
+
+    }
+    .review{
+        align-self: center;
+        font-size: 14px;
+        padding-right:20px;
+        padding-left:0px;
+        padding-bottom:0px;
+
+    }
+    .colorbox{
+        width:370px;
+        height:245px;
+        transform: translate(5.5%,5.5%);
+    }
+    .user{
+       gap:0px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .container{
+        width:500px;
+        height:300px;
+        flex-direction: row;
+        font-size:15px;
+    }
+    .textContainer{
+        padding:30px 0px;
+    }
+    .username{
+        display:contents;
+        width:150px;
+        font-size: 20px;
+    }
+  
+    .bookCover{
+        max-width: 210px;
+        max-height: 300px;
+        padding:30px;
+    }
+    .review{
+        align-self: center;
+        padding-right:40px;
+        font-size: 15px;
+    }
+    .colorbox{
+        width:500px;
+        height:300px;
+        transform: translate(3%,4.5%);
+    }
+    .user{
+        gap:10px;
+    }
+    
+
+}

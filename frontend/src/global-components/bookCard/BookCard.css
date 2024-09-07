@@ -1,0 +1,16 @@
+.dropShadow{
+    position:absolute;
+    background-color:#1e1e1e ;
+    width:170px;
+    height:297px;
+    z-index: 1;
+    transform: translate(3.5%,3.5%);
+}
+.bookCoverCard{
+    position: relative;
+    z-index: 2;
+    width:auto;
+    height:auto;
+    max-width:400px;
+    max-height: 300px;
+}
