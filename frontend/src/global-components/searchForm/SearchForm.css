@@ -1,0 +1,42 @@
+.searchFormComponent{
+    display:flex;
+    justify-content: center;
+}
+.searchForm{
+    display:flex;
+    /* background-color: #1e1e1e; */
+    height:50px;
+    justify-content: center;
+
+}
+.searchIcon{
+    height:auto;
+    width:auto;
+    max-width:35px;
+    max-height:35px;
+    padding:5px;
+    margin-left: 10px;
+}
+.searchFormContainer{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    background-color: #1e1e1e;
+}
+.searchInput{
+    width:400px;
+    border:none;
+    height:40px;
+    font-size: 20px;
+    color:white;
+    background-color: inherit;
+    outline: none;
+}
+.submitSearch{
+    border:none;
+    cursor: pointer;
+    width:100px;
+    background-color: #707070;
+    color:white;
+    font-size: 17px;
+}

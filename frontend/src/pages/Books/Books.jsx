@@ -1,9 +1,11 @@
 import React from 'react'
+import SearchForm from '../../global-components/SearchForm/SearchForm'
+
 
 const Books = () => {
   return (
     <div>
-      hello
+      <SearchForm/>
     </div>
   )
 }
