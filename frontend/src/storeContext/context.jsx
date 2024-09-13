@@ -12,8 +12,8 @@ const AppProvider = ({children}) => {
         try{
             const response = await fetch(`${URL}${searchTerm}`);
             const data = await response.json();
-            console.log(data);
             const {docs} = data;
+            console.log("Fetched Data:", docs);
 
             if (docs){
                 const newBooks = docs.slice(0,20).map((bookSingle)=>{
@@ -28,6 +28,7 @@ const AppProvider = ({children}) => {
                         title:title
                     }
                 });
+                console.log("New Books:", newBooks); // Log the mapped books
                 setBooks(newBooks);
 
                 if(newBooks.length > 1 ){
