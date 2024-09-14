@@ -1,0 +1,18 @@
+.bookSearchCover{
+    position: relative;
+    width:150px;
+    height:210px;
+    z-index: 2;
+
+}
+.bookSearchCard{
+    width:fit-content;
+}
+.searchCardDropShadow{
+    position:absolute;
+    background-color:#1e1e1e ;
+    width:150px;
+    height:210px;
+    z-index: 1;
+    transform: translate(3.5%,3.5%);
+}

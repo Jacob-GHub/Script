@@ -1,4 +1,5 @@
 import React from "react";
+import './BookSearchCard.css'
 import { Link } from "react-router-dom";
 
 const BookSearchCard = (book) => {
@@ -7,8 +8,9 @@ const BookSearchCard = (book) => {
     console.log(book);
 
     return (
-        <div className="bookCard">
-            <img src={book.cover_img} alt={"Book cover"} />
+        <div className="bookSearchCard">
+             <div className='searchCardDropShadow'></div>
+            <img className="bookSearchCover"src={book.cover_img} alt={"Book cover"} />
         </div>
     );
 };

@@ -6,9 +6,9 @@ import BookList from '../../books-components/BookList/BookList'
 
 const Books = () => {
   return (
-    <div>
+    <div className='booksPage'>
       <SearchForm/>
-      {/* <BookList/> */}
+      <BookList/>
     </div>
   )
 }

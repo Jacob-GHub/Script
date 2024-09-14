@@ -13,29 +13,32 @@ const SearchForm = () => {
     e.preventDefault();
     let tempSearchTerm = searchText.current.value.trim();
     if((tempSearchTerm.replace(/[^\w\s]/gi,"")).length === 0) {
-      setSearchTerm("the lost world");
+      // setSearchTerm("the lost world");
       setResultTitle("Please enter something ...");
     }
     else{
       setSearchTerm(searchText.current.value);
+      // navigate("/book")
     }
-    //  navigate("/book")
+   
   };
   return (
-    <form onSubmit={handleSubmit} className="searchForm">
-      <div className="searchFormContainer">
-        <img src="../../assets/searchIcon.png" alt="" className="searchIcon" />
-        <input
-          type="text"
-          className="searchInput"
-          placeholder="Search for a book"
-          ref={searchText}
-        />
-      </div>
-      <button type="submit" className="submitSearch">
-        Search
-      </button>
-</form>
+    <div className="searchContainer">
+      <form onSubmit={handleSubmit} className="searchForm">
+        <div className="searchFormContainer">
+          <img src="../../assets/searchIcon.png" alt="" className="searchIcon" />
+          <input
+            type="text"
+            className="searchInput"
+            placeholder="Search for a book"
+            ref={searchText}
+          />
+        </div>
+        <button type="submit" className="submitSearch">
+          Search
+        </button>
+  </form>
+</div>
   )
 }
 

@@ -3,7 +3,7 @@ const URL = "https://openlibrary.org/search.json?title=";
 const AppContext = React.createContext();
 
 const AppProvider = ({children}) => {
-    const [ searchTerm, setSearchTerm] = useState("the lost world")
+    const [ searchTerm, setSearchTerm] = useState("")
     const [books,setBooks] = useState([]);
     const [loading,setLoading] = useState(true);
     const [resultTitle, setResultTitle] = useState("");
@@ -49,8 +49,10 @@ const AppProvider = ({children}) => {
         }
     },[searchTerm])
 
-    useEffect(()=>{
-        fetchBooks();
+    useEffect(() => {
+        if (searchTerm.trim()) {  // Only fetch when there's a search term
+            fetchBooks();
+        }
     },[searchTerm,fetchBooks])
 
     return(
