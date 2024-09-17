@@ -5,7 +5,7 @@ import LoadImg from '/loadImg.png'
 const Loader = () => {
   return (
     <div className='loader'>
-      <img src={LoadImg} alt="loader" />
+      <img className='loaderImg' src={LoadImg} alt="loader" />
     </div>
   )
 }

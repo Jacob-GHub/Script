@@ -1,3 +1,17 @@
 .booksPage{
     background-color: #F1F0EA;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 200px;
+
+}
+.booksHeaderContainer{
+    margin-top: 50px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width:450px;
+    gap:30px;
+    text-align: center;
 }

@@ -22,9 +22,7 @@ const BookList = () => {
     return (
         <section className="bookList">
             <div className="bookListContainer">
-                <div className="section-title">
-                    <h2>{resultTitle}</h2>
-                </div>
+                    <h2 className='section-title'>{resultTitle}</h2>
                 <div className="bookListContentGrid">
               {
               booksWithCovers.slice(0, 30).map((item, index) => {

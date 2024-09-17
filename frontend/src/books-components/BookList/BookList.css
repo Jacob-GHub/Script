@@ -1,9 +1,17 @@
 .bookListContentGrid{
-    margin-top:100px;
     justify-items: center;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     grid-auto-rows: minmax(100px, auto);
     background-color: #F1F0EA;
+}
+
+.section-title{
+    background-color: #F1F0EA;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
 }
