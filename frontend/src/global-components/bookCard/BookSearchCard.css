@@ -18,3 +18,7 @@
     z-index: 1;
     transform: translate(3.5%,3.5%);
 }
+
+.handleNavigationCursorPointer{
+    cursor: pointer;
+}
