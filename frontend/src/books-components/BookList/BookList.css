@@ -15,3 +15,13 @@
     font-size: 30px;
     font-weight: 500;
 }
+
+@media (max-width:600px) {
+    .bookListContentGrid{
+        justify-content: center;
+        grid-template-columns: repeat(2, 0.4fr);
+        gap: 50px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    
+}

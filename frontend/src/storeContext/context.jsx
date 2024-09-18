@@ -7,6 +7,7 @@ const AppProvider = ({children}) => {
     const [books,setBooks] = useState([]);
     const [loading,setLoading] = useState(true);
     const [resultTitle, setResultTitle] = useState("");
+    const [bookAmount, setBookAmount] = useState(20);
     const fetchBooks = useCallback(async() => {
         setLoading(true);
         try{
@@ -16,7 +17,7 @@ const AppProvider = ({children}) => {
             console.log("Fetched Data:", docs);
 
             if (docs){
-                const newBooks = docs.slice(0,20).map((bookSingle)=>{
+                const newBooks = docs.slice(0,bookAmount||20).map((bookSingle)=>{
                     const {key,author_name,cover_i,edition_count,first_publish_year,title} = bookSingle;
 
                     return {
@@ -47,7 +48,7 @@ const AppProvider = ({children}) => {
             console.log(error)
             setLoading(false);
         }
-    },[searchTerm])
+    },[searchTerm, bookAmount])
 
     useEffect(() => {
         if (searchTerm.trim()) {  // Only fetch when there's a search term
@@ -57,7 +58,7 @@ const AppProvider = ({children}) => {
 
     return(
         <AppContext.Provider value={{
-            loading,books,setSearchTerm,resultTitle,setResultTitle
+            loading,books,setSearchTerm,resultTitle,setResultTitle, setBookAmount
         }}>
             {children}
         </AppContext.Provider>

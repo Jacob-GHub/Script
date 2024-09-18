@@ -4,7 +4,7 @@ import "./BookList.css"
 import Loader from '../../global-components/Loader/Loader';
 import BookSearchCard from '../../global-components/bookCard/BookSearchCard';
 
-const defaultCoverImg = "../../assets/dune.png"; // Replace with your default image path
+const defaultCoverImg = "/defaultBookCover.jpg"; // Replace with your default image path
 
 const BookList = () => {
     const { books, loading, resultTitle } = useGlobalContext();
@@ -17,21 +17,24 @@ const BookList = () => {
             : defaultCoverImg
     }));
     console.log("Books with covers:", booksWithCovers);
-    if (loading) return <Loader />
+    // if (loading) return <Loader />
 
     return (
         <section className="bookList">
             <div className="bookListContainer">
-                    <h2 className='section-title'>{resultTitle}</h2>
+              <h2 className='section-title'>{resultTitle}</h2>
                 <div className="bookListContentGrid">
-              {
-              booksWithCovers.slice(0, 30).map((item, index) => {
-                return (
-                  <BookSearchCard key={index}{...item}/>
-                )
-              })
-            }
-            </div>
+                  {
+                  booksWithCovers.slice(0, 20).map((item, index) => {
+                    return (
+                      <div className="bookCoverContainer">
+                        <BookSearchCard key={index}{...item}/>
+                      </div>
+                    )
+                  })
+                }
+                </div>
+                <button>fedwnediwendiwnir</button>
             </div>
         </section>
     );
